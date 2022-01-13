@@ -1,6 +1,14 @@
 <%- include('partials/header'); -%>
 <h1>Compose<h1>
+  <% if(msg==="title is already taken"){%>
+    
+    <div class="alert alert-danger" role="alert">
+     you have entered a title that is already taken, please provide another title.
+    </div>
+  <%}%>
+</div>
   <form  action="/compose" method="post">
+  
     <div class="form-group">
     <label style="font-size:20pt">Title</label>
     <input type="text" class="form-control" name="title" id="title" placeholder="Enter Title">
