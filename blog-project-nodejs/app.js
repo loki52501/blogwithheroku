@@ -5,7 +5,7 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const path=require('path');
 const mongoose=require('mongoose');
-const port=3000;
+const port=process.env.PORT || 5000;
 const url='mongodb+srv://lokesh:loki9301@cluster0.tjrxj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 
 const _=require("lodash")
